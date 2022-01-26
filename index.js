@@ -14,9 +14,9 @@ app.get("/", async function (req, res) {
 });
 app.get("/:title", async function (req, res) {
 
-  result =await scrapper.main(url+req.params.title);
+  results =await scrapper.main(url+req.params.title);
 
-   await res.send(result);
+   await res.send(results);
 });
 
 
